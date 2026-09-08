@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+}
+
+header {
+    display: block;
+}
+
+h1 {
+    font-weight: 600;
+    font-style: normal
+}
+
+h2 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.title-section {
+    display: flex;
+    background-color: rgb(127, 125, 125);
+    padding: 2.5rem;
+    justify-content: center;
+}
+
+#course-title {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    background-color: #333;
+}
+
+
+nav a {
+    display: block;
+    color: aliceblue;
+    padding: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    font-weight: 700;
+    color: orange;
+}
+
+main {
+    background: lightgrey;
+    max-width: 70%;
+    margin: 1rem auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 5px;
+    gap: 2rem;
+}
+
+.card-one, .card-two {
+    background-color: white;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.card-content:nth-child(2) {
+    flex-direction: row;
+}
+
+.card-two {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    border-radius: 5px;
+}
+
+footer {
+    background: rgb(127, 125, 125);
+    grid-column: 1/4;
+    text-align: center;
+    padding: 3rem;
+}

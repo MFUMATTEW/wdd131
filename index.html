@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentams - Flavien Mabouba</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Flavien Mabouba | Web page containing background information and links, LinkedIn, Canvas, Scriptures and Final Project.">
+    <meta name="author" content="Flavien Mabouba">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,100&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <div class="title-section">
+            <p>BYU IDAHO :<span id="course-title">WDD 131-Dynamic Fundamentals</span></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/flavien-mabouba-429167314/" title="LinkedIn">LinkedIn</a></li>
+                <li><a href="http://byupw.instructure.com/" title="Canvas">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/32?lang=fra&id=p27#p27" title="scripture">Scripture</a></li>
+                <li><a href="#" title="Final Project">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card-one">
+            <h1>Flavien Mabouba</h1>
+            <div class="card-content">
+                <img src="images/profile.jpg" alt="" width="165">
+                <p>My name is Flavien Mabouba. I was born in France but raised in Gabon. I'm currently a BYU Pathway
+                student pursuing a software and development degree. I really like movies like Harry Potter or Hunger
+                Games, but what i enjoy the most is listening to different kind of music.</p>
+            </div>
+            <h2>My Country</h2>
+            <div class="card-content">
+                <p>Gabon is a little country in central Africa. Which has a wonderful diversity in terms of nature and
+                culture, with the 3rd largest forest in the world. Gabon is best known for its 13 parks housing
+                several species.</p>
+                <img src="images/gabon.png" alt="">
+            </div>
+        </section>    
+        <section class="card-two">
+            <h2>My Testimony</h2>
+            <div class="card-content">
+                <p>I joined the church in 2014 and since then i have seen a great change in my life.
+                I served a full-time mission and had the oportunity to share the wonderful message
+                of the restored gospel to others. I know that God loves us and wants what is best for us.
+                He called inspired prophets to lead and guide us. Now as a BYU pathway student, I continue
+                to put my faith in the Lord, because i know he can help me succeed on the path of self reliance.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+       <p>©️<span id="currentyear"></span>🦩Flavien Mabouba🦩Gabon</p>
+       <p id="lastModified"></p> 
+    </footer>
 </body>
 </html>
