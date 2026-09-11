@@ -60,7 +60,7 @@ nav a:hover {
 
 main {
     background: lightgrey;
-    max-width: 70%;
+    max-width: 75%;
     margin: 1rem auto;
     padding: 2rem;
     display: grid;
@@ -69,12 +69,20 @@ main {
     gap: 2rem;
 }
 
-.card-one, .card-two {
+.card {
     background-color: white;
     padding: 1.5rem;
     margin: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-content {
@@ -86,14 +94,6 @@ main {
 
 .card-content:nth-child(2) {
     flex-direction: row;
-}
-
-.card-two {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 img {
