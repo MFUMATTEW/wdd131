@@ -95,7 +95,7 @@ h2{
 }
 
 .active::before{
-    content: 🔥;
+    content: "🔥";
 }
 
 footer{
