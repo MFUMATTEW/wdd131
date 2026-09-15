@@ -49,6 +49,7 @@ h1{
     font-weight: bold;
     text-align: center;
     margin-bottom: 1.5rem;
+    margin-left: 1rem;
 }
 
 .album{
@@ -57,7 +58,7 @@ h1{
     gap: 20px;
 }
 
- figure{
+figure{
     text-align: center;
 }
 
@@ -73,13 +74,6 @@ h2{
     margin-left: 1rem;
     font-size: 1.5rem;
 }
-
-h1{
-    text-align: center; 
-    margin-left: 1rem;
-    font-size: 1.4rem;
-}
-
 
 #menu{
     font-size: 1.5rem;
