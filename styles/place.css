@@ -1,0 +1,147 @@
+:root {
+    --primary-color: rgb(67, 124, 42);
+    --secondary-color: rgb(234, 244, 164);
+    --tertiary-color: rgb(22, 34, 125);
+    --font-family: "Fira Sans", sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Fira Sans", sans-serif;
+    line-height: 1.5;
+    background-color: #fdfdfd;
+}
+
+header {
+    background-color: var(--tertiary-color);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+section {
+    width: 100%;
+    max-width: 400px;
+    border: 0.1rem solid var(--primary-color);
+    text-align: center;
+    margin: 0.3rem 0;
+    padding: 0.5rem;
+    border-radius: 3px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    padding: 0.3rem;
+}
+
+.label{
+    font-weight: bold;
+}
+
+.weather img{
+    width: 100px;
+    height: auto;
+    margin: 0.5rem auto;
+}
+
+footer {
+    background: var(--tertiary-color);
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--secondary-color);
+}
+
+@media (min-width: 786px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: start;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .hero {
+        grid-column: 1/4;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .data, .weather {
+        position: absolute;
+        width: 25%;
+        max-width: 300px;
+        max-height: 40vh;
+        overflow-y: auto;
+        background: rgb(255, 255, 0.8);
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px #00000033;
+    }
+
+    .data {
+        left: 5%;
+        top: 60%;
+    }
+
+    .weather {
+        right: 5%;
+        top: 20%;
+    }
+
+    .data h3, .weather h3 {
+        background-color: var(--primary-color);
+        color: white;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border-radius: 5px;
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .data, .weather {
+        position: static;
+        width: 90%;
+        margin: 1rem auto;
+        margin-top: 1.5rem;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="description" content="A page providing information about my country, population, language, currency, etc.. ">
+    <meta name="author" content="Flavien Mabouba">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Gabon</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/farming.webp" media="(min-width: 1000px)">
+                <source srcset="images/farming.webp" media="(min-width: 600px)">
+                <img src="images/Perroquet-du-Gabon.webp" alt="Perroquet gris" width="500" height="700">
+            </picture>
+        </div>
+        <section class="data">
+            <h3>Data</h3>
+            <ul>
+                <li><span class="label">Area:</span> 267,667 sq Km</li>
+                <li><span class="label">Population:</span> 2,025,137</li>
+                <li><span class="label">Capital:</span> Libreville</li>
+                <li><span class="label">Languages:</span> French</li>
+                <li><span class="label">Currency:</span> Franc CFA</li>
+                <li><span class="label">Time Zone:</span> UTC+1</li>
+                <li><span class="label">Calling Code:</span> +241</li>
+                <li><span class="label">Internet TLD:</span> .ga</li>
+            </ul>
+        </section>
+        <section class="weather">
+            <h3>Weather</h3>
+            <img src="images/weather-icon.svg" alt="Weather statut">
+            <ul>
+                <li><span class="label">Temperature:</span> 8°C</li>
+                <li><span class="label">Conditions:</span> Partly Cloudy</li>
+                <li><span class="label">Wind:</span> 10km/h</li>
+                <li><span class="label">Wind Chill:</span> <span id="windchill"></span> </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span>🦩Flavien Mabouba🦩Gabon</p>
+        <p><span id="lastModified"></span></p>
+    </footer> 
+</body>
+</html>
