@@ -134,6 +134,11 @@ footer {
         text-transform: uppercase;
         letter-spacing: 1px;
     }
+
+    .data h3::after {
+        content: "📃";
+        margin-left: .5rem;
+    }
 }
 
 @media (max-width: 600px) {
