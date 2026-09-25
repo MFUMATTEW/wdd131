@@ -36,7 +36,7 @@ main {
     align-items: center;
 }
 
-h3 {
+h2 {
     font-size: 2em;
     font-weight: bold;
     color: var(--primary-color);
@@ -124,7 +124,7 @@ footer {
         top: 20%;
     }
 
-    .data h3, .weather h3 {
+    .data h2, .weather h2 {
         background-color: var(--primary-color);
         color: white;
         font-size: 1.5rem;
@@ -135,7 +135,7 @@ footer {
         letter-spacing: 1px;
     }
 
-    .data h3::after {
+    .data h2::after {
         content: "📃";
         margin-left: .5rem;
     }
