@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --header-footer-color: #8F9DA6;
+    --page-background-color: #EDF3F3;
+    --buttons-links-color: #21B2A7;
+    --Headings-color: #09273C;
+    --paragraph-color: #13171A;
+
+}
+
+body{
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+}
+
+/* header{
+
+} */
+
+/* h1{} */
+
+h2{
+    font-size: 1.2rem;
+    color:#09273C;
+    margin: .5rem .5rem .5rem .0rem;
+    border-bottom: 3px solid #21B2A7;
+    padding-bottom: 0.13rem;
+    display: inline-block;
+}
+
+p{
+    color: var(--paragraph-color);
+}
+
+.title-section {
+    display: flex;
+    background-color: var(--header-footer-color);
+    padding: 2rem;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.title-section img{
+    padding: .5rem;
+    height: 55px;
+    width: auto;
+    margin-right: 0.8rem;
+    margin-top: 2.25rem;
+    border-right: solid 5px;
+}
+
+.title-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#website-title {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align:left;
+    color: var(--paragraph-color);
+    padding-left: 0;
+    border-left: none;
+}
+
+main {
+    background: var(--page-background-color);
+    padding: 2rem;
+}
+
+section{
+    margin: 1rem;
+    padding: .5rem;
+}
+
+h3 {
+    text-align: center;
+    margin: 1rem 0;
+    margin-top: 2rem;
+}
+
+section img{
+    display: block;
+    width: 25%;
+    max-width: 500px;
+    height: auto;
+    border: 1px solid #ccc;
+    margin: 1rem auto;
+}
+
+.color-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.color-box {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+}
+
+.color-grey {
+    background-color: var(--header-footer-color);
+}
+
+.color-white {
+    background-color: var(--page-background-color);
+}
+
+.color-green {
+    background-color: var(--buttons-links-color);
+}
+
+.color-dark {
+    background-color: var(--Headings-color);
+}
+
+.color-black {
+    background-color: var(--paragraph-color);
+}
+
+
+footer {
+    background: var(--header-footer-color);
+    text-align: center;
+    padding: 3rem;
+}
+
+
